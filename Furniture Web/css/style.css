@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(240, 245, 239);
+}
+
+/*шапка сайту */
+.container_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e5e5e5;
+  position: 'Pooppins', sans-serif;
+  z-index: 12;
+}
+
+.container_1 a {
+  text-decoration: none;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4f7eb0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.logo_1 {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+}
+
+.logo_1:hover {
+
+  transform: scale(20);
+  opacity: 0;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Секція для Viber каналу */
+.viber-channel-section {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+
+}
+
+.viber-content {
+  max-width: 55%;
+}
+
+.viber-content h2 {
+  font-size: 28px;
+  color: #4c4c4c;
+  margin-bottom: 10px;
+}
+
+.viber-content p {
+  font-size: 18px;
+  color: #6c6c6c;
+  margin-bottom: 20px;
+}
+
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #0056b3;
+}
+
+.viber-qr-code img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+/* Секція "Про нас" */
+
+.about {
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  width: 100%;
+  background-color: #76a4ef;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about_us {
+  display: flex;
+  align-items: center;
+
+  gap: 60px;
+}
+
+.about_us img {
+  max-width: 500px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about_us img:hover {
+  transform: scale(1.05);
+}
+
+.us {
+  max-width: 600px;
+}
+
+.us h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.us p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about_us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about_us img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about_us img {
+    margin-bottom: 20px;
+  }
+}
+
+/*Товари*/
+.products {
+  margin-top: 80px;
+}
+
+.products .heading {
+  text-align: center;
+}
+
+.products .box-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.products .box-container .box {
+  width: 18%;
+  background: rgb(232, 234, 236);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.products .box-container .box .image img {
+  width: 100%;
+
+}
+
+
+
+.products .box-container .box .content {
+  padding: 32px;
+  padding-top: 0;
+}
+
+.products .box-container .box .content h3 {
+  color: black;
+  font-size: 32px;
+}
+
+.products .box-container .box .content .price {
+  display: inline-block;
+  color: rgb(45, 44, 44);
+  font-size: 28px;
+}
+
+.products .box-container .box .content .stars {
+  padding: 16px 0;
+}
+
+.products .box-container .box .content .stars i {
+  font-size: 20px;
+  color: gold;
+}
+
+.products .box-container .box .content .fa-shopping-cart,
+.products .box-container .box .content .fa-heart,
+.products .box-container .box .content .fa-eye {
+  text-align: center;
+  height: 44px;
+  width: 44px;
+  line-height: 40px;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: black;
+  border: 1.6px solid grey;
+}
+
+.products .box-container .box .content .fa-heart,
+.products .box-container .box .content .fa-eye {
+  margin-left: 8px;
+}
+
+
+
+/* Секція відгуків */
+.review {
+  margin-top: 100px;
+}
+
+.review .heading {
+  text-align: center;
+}
+
+.review .box-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+  gap: 24px;
+}
+
+.review .box-container .box {
+  margin: 64px 0;
+  padding-bottom: 32px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.review .box-container .box .image {
+  margin-top: -80px;
+}
+
+.review .box-container .box .image img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .box-container .box .content .stars i {
+  color: gold;
+  font-size: 27.2px;
+  padding: 8px 1.6px 16px;
+}
+
+.review .box-container .box .content h3 {
+  font-size: 32px;
+  color: #10221b;
+}
+
+.review .box-container .box .content p {
+  font-size: 22.4px;
+  color: #666;
+  padding: 8px 24px;
+}
+
+
+.card_btn {
+  background-color: #6200ea;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card_btn:hover {
+  background-color: #3700b3;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.card_btn:active {
+  background-color: #6200ea;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card_image {
+  /* Зображення не виходить за межі картки */
+  /* Зберігає пропорції зображення */
+  border-radius: 8px;
+  /* Закруглені кути зображення */
+  margin-bottom: 10px;
+  width: 40px;
+  height: 50px;
+}
+
+
+.table-container {
+  text-align: center;
+
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table_work {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.table_work th,
+.table_work td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table_work th {
+  background-color: #6200ea;
+  color: white;
+  font-size: 18px;
+}
+
+.table_work tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table_work tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+.table_work td {
+  font-size: 16px;
+  color: #555;
+}
+
+.table_work td:first-child {
+  font-weight: bold;
+  color: #6200ea;
+}
+
+.work {
+  text-align: center;
+}
+
+/* Основні стилі для футера */
+.footer {
+  display: flex;
+  /* Використовуємо Flexbox для розташування елементів */
+  align-items: center;
+  /* Вирівнювання по вертикалі по центру */
+  justify-content: center;
+  /* Вирівнювання по горизонталі по центру */
+  background-color: #6a0dad;
+  /* Фоновий колір футера (фіолетовий) */
+  padding: 20px;
+  /* Відступи всередині футера */
+  border-top: 5px solid #4b0082;
+  /* Тонка обводка зверху (темніший фіолетовий) */
+  color: #fff;
+  /* Колір тексту */
+  font-family: 'Arial', sans-serif;
+  /* Шрифт для тексту */
+}
+
+/* Стилі для логотипу */
+.footer .logo_1 {
+  max-width: 120px;
+  /* Максимальна ширина логотипу */
+  height: auto;
+  /* Зберігає пропорції логотипу */
+  margin-right: 20px;
+  /* Відступ справа від логотипу */
+}
+
+/* Стилі для телефонного номера */
+.footer p {
+  font-size: 1.2em;
+  /* Розмір шрифту номеру */
+  margin: 0;
+  /* Відсутність зовнішніх відступів */
+  text-align: center;
+}
+
+.goods {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  background-color: #d8b2ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  background-color: #9c4dcc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #7b2d9e;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 5px 0;
+  color: blue;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: orange;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.search-container button:hover {
+  background-color: #bbb;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.icons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.icons a img {
+  margin-right: 5px;
+}
+
+
+
+.navbar {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 10px;
+  align-items: center;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 5px 0;
+  color: blue;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: orange;
+}
+
+
+
+
+
+
+.img1 {
+  background: url(../img/popoi.webp) no-repeat;
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.img1::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+._title {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  padding: 0 20px;
+  text-align: center;
+}
+
+._title .title {
+  color: #fff;
+  padding-top: 100px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+._title .su_title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+
+}
+
+._title .btns {
+  margin-top: 60px;
+}
+
+._title .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+
+}
+
+._title .btns button:first-child {
+  color: #fff;
+  background: none;
+
+}
+
+._title .btns button:first-child:hover {
+  background: #fff;
+  color: #000;
+
+}
+
+
+/* General form styles */
+#searchref {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+/* Search input styles */
+.form-control {
+  flex: 1;
+  border: 2px solid #dcdcdc;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: none;
+}
+
+/* Search button styles */
+.btn-search {
+  margin-left: -50px;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #66afe9;
+  background-color: #66afe9;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-search:hover,
+.btn-search:focus {
+  background-color: #558abf;
+  border-color: #558abf;
+  color: #fff;
+  outline: none;
+}
+
+/* Input and button hover interaction */
+#searchref:hover .form-control {
+  border-color: #a2a2a2;
+}
+
+#searchref:hover .btn-search {
+  background-color: #4a7bbd;
+  border-color: #4a7bbd;
+}
+
+/* Placeholder styles */
+.form-control::placeholder {
+  color: #999;
+  opacity: 1;
+  /* Firefox */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form-control {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .btn-search {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #searchref {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-control,
+  .btn-search {
+    margin: 5px 0;
+    border-radius: 50px;
+  }
+
+  .btn-search {
+    margin-left: 0;
+  }
+}
